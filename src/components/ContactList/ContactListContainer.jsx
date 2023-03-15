@@ -9,7 +9,7 @@ import {
 export default function ContactListContainer() {
   const [search, setSearch] = useState("");
 
-  const contacts = useSelector((state) => state.contact);
+  const contacts = useSelector((state) => state.contact.contact);
 
   const handleChange = (e) => {
     setSearch(e.target.value);
